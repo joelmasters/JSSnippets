@@ -1,0 +1,9 @@
+// Delay function
+
+function delayForXMilliseconds(timeInMilliseconds) {
+	return new Promise(function(resolve, reject) {
+		setTimeout(function() {
+			resolve("success");
+		}, timeInMilliseconds);
+	})
+}
